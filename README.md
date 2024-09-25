@@ -13,10 +13,17 @@ file : 'app/code/LandingPage/Form/etc/module.xml'
 file: 'app/code/LandingPage/Form/registration.php'
 
 ```xml
-<?xml version="1.0"?>
-<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:Module/etc/module.xsd">
-    <module name="LandingPage_Form" setup_version="1.0.0"/>
-</config>
+<?php
+
+use Magento\Framework\Component\ComponentRegistrar;
+
+ComponentRegistrar::register(
+    ComponentRegistrar::MODULE,
+    
+     // The name of the module we're registering
+    'LandingPage_Form',
+    __DIR__
+);
 ```
 
 file 'app/code/LandingPage/Form/etc/adminhtml/routes.xml'
