@@ -69,10 +69,10 @@ file : 'app/code/LandingPage/Form/view/adminhtml/ui_component/landingpage_form_c
 <listing xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Ui:etc/ui_configuration.xsd">
   <argument name="data" xsi:type="array">
     <item name="js_config" xsi:type="array">
-      <item name="provider" xsi:type="string">dev_grid_category_listing.dev_grid_category_listing_data_source</item>
-      <item name="deps" xsi:type="string">dev_grid_category_listing.dev_grid_category_listing_data_source</item>
+      <item name="provider" xsi:type="string">landingpage_form_category_listing.landingpage_form_category_listing_data_source</item>
+      <item name="deps" xsi:type="string">landingpage_form_category_listing.landingpage_form_category_listing_data_source</item>
     </item>
-    <item name="spinner" xsi:type="string">dev_grid_category_columns</item>
+    <item name="spinner" xsi:type="string">landingpage_form_category_columns</item>
     <item name="buttons" xsi:type="array">
       <item name="add" xsi:type="array">
         <item name="name" xsi:type="string">add</item>
@@ -82,10 +82,10 @@ file : 'app/code/LandingPage/Form/view/adminhtml/ui_component/landingpage_form_c
       </item>
     </item>
   </argument>
-  <dataSource name="dev_grid_category_listing_data_source">
+  <dataSource name="landingpage_form_category_listing_data_source">
     <argument name="dataProvider" xsi:type="configurableObject">
-      <argument name="class" xsi:type="string">Dev\Grid\Ui\DataProvider\Category\ListingDataProvider</argument>
-      <argument name="name" xsi:type="string">dev_grid_category_listing_data_source</argument>
+      <argument name="class" xsi:type="string">LandingPage\Form\Ui\DataProvider\Category\ListingDataProvider</argument>
+      <argument name="name" xsi:type="string">landingpage_form_category_listing_data_source</argument>
       <argument name="primaryFieldName" xsi:type="string">entity_id</argument>
       <argument name="requestFieldName" xsi:type="string">entity_id</argument>
       <argument name="data" xsi:type="array">
@@ -109,7 +109,7 @@ file : 'app/code/LandingPage/Form/view/adminhtml/ui_component/landingpage_form_c
     <massaction name="listing_massaction">
       <argument name="data" xsi:type="array">
         <item name="data" xsi:type="array">
-          <item name="selectProvider" xsi:type="string">dev_grid_category_listing.dev_grid_category_listing.dev_grid_category_columns.ids</item>
+          <item name="selectProvider" xsi:type="string">landingpage_form_category_listing.landingpage_form_category_listing.landingpage_form_category_columns.ids</item>
           <item name="displayArea" xsi:type="string">bottom</item>
           <item name="component" xsi:type="string">Magento_Ui/js/grid/tree-massactions</item>
           <item name="indexField" xsi:type="string">entity_id</item>
@@ -120,7 +120,7 @@ file : 'app/code/LandingPage/Form/view/adminhtml/ui_component/landingpage_form_c
           <item name="config" xsi:type="array">
             <item name="type" xsi:type="string">delete</item>
             <item name="label" xsi:type="string" translate="true">Delete</item>
-            <item name="url" xsi:type="url" path="dev_grid/category/massDelete" />
+            <item name="url" xsi:type="url" path="landingpage_form/category/massDelete" />
             <item name="confirm" xsi:type="array">
               <item name="title" xsi:type="string" translate="true">Delete items</item>
               <item name="message" xsi:type="string" translate="true">Are you sure you want to delete selected items?</item>
@@ -145,7 +145,7 @@ file : 'app/code/LandingPage/Form/view/adminhtml/ui_component/landingpage_form_c
     </filters>
     <paging name="listing_paging" />
   </listingToolbar>
-  <columns name="dev_grid_category_columns">
+  <columns name="landingpage_form_category_columns">
     <selectionsColumn name="ids">
       <argument name="data" xsi:type="array">
         <item name="config" xsi:type="array">
