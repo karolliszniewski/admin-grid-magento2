@@ -50,6 +50,18 @@ file 'app/code/LandingPage/Form/etc/adminhtml/menu.xml'
 </config>
 ```
 
+file: 'app/code/LandingPage/Form/etc/adminhtml/layout/landingpage_form_index_index.xml'
+```xml
+<?xml version="1.0" encoding="UTF-8"?>
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+  <body>
+    <referenceContainer name="content">
+      <uiComponent name="landingpage_form_category_listing" />
+    </referenceContainer>
+  </body>
+</page>
+```
+
 
 
 
