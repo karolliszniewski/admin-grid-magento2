@@ -1,4 +1,5 @@
 Will follow https://developer.adobe.com/commerce/php/development/components/add-admin-grid/
+and https://www.mageplaza.com/devdocs/create-admin-grid-magento-2.html#:~:text=In%20this%20article,%20we%20will%20find
 
 ##
 file : 'app/code/LandingPage/Form/etc/module.xml'
